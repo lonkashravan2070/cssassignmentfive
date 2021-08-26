@@ -1,0 +1,285 @@
+#bodybackground{
+    background-color: yellow;
+}h1{
+    text-align: center;
+}
+.rows{
+    list-style: 1;
+    padding-left: 30%;
+    line-height: 50px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 400px;
+    margin-left: 30px;
+}
+.row1{
+    background-color: dodgerblue;
+    height: 90px;
+    width: 90px;
+    animation-name: row1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes row1{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+    transform:skewX(-20deg) ;
+    }
+}
+.row2{
+    background-color: gray;
+    height: 90px;
+    width: 90px;
+    animation: row2 2s linear infinite alternate-reverse;
+}
+@keyframes row2{
+    50%{
+     transform: skewY(-30deg);
+    }
+    100%{
+        transform: skewY(30deg);
+    }
+}
+.row3{
+    background-color:dodgerblue;
+    height: 90px;
+    width: 90px;
+    animation: row3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+
+}
+@keyframes row3{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.row4-1{
+    background-color:dodgerblue;
+    height: 90px;
+    width: 90px;
+    transition-property: height;
+    animation: row4-1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes row4-1{
+    100%{
+        transform: rotateX(75deg);
+    }
+}
+.row4-2{
+    background-color:violet;
+    height: 90px;
+    width: 90px;
+    animation: row4-2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes row4-2{
+    100%{
+        transform: rotateY(75deg);
+    }
+}
+.row4-3{
+    background-color:mediumseagreen;
+    height: 90px;
+    width: 90px;
+    animation: row4-3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes row4-3{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.Anchor{
+    text-align: center;
+    font-size: x-large;
+}
+/* SECOND PAGE */
+#secondbody{
+ background-color: yellow;
+}
+.Boxes{
+    list-style: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    line-height: 30px;
+}
+.box{
+    background-color: green;
+    height: 80px;
+    width: 80px;
+}
+.box1{
+    transition: width 2s 1s;
+}
+.box1:hover{
+    width: 300px;
+}
+.box2{
+    transition: height 2s 1s,width 2s 1s;
+}
+.box2:hover{
+    width:300px;
+    height: 300px;
+}
+.box3{
+    transition: width 2s linear 1s;
+}
+.box3:hover{
+    width: 300px;
+}
+.box4{
+    transition: width 2s ease 1s;
+}
+.box4:hover{
+    width: 300px;
+}
+.box5{
+    transition: width 2s ease-in 1s;
+}
+.box5:hover{
+    width: 300px;
+}
+.box6{
+    transition: width 2s ease-out 1s;
+}
+.box6:hover{
+   width: 300px;
+}
+.box7{
+    transition: width 2s ease-in-out 1s;
+}
+.box7:hover{
+  width: 300px;
+}
+/*Third page */
+#thirdbody{
+    border: 8px;
+    border-style: outset;
+    border-top-color: white;
+    border-left-color: orangered;
+    border-right-color: green;
+    border-bottom-color: white;
+    overflow: hidden;
+    height: 98vh;
+    width: 98vw;
+}
+.p{
+    display: grid;
+    grid-template-columns: 85px 195px 55px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+.p1{
+    background-color: orange;
+    font-size: x-large;
+    font-weight: 700;
+}
+.p2{
+   background-color: white;
+   font-size: x-large;
+   font-weight: 700;
+}
+.p3{
+    background-color:green;
+    font-size: x-large;
+    font-weight: 700;
+ }
+ .sky{
+     background-image: url(./sky.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     overflow-x: hidden;
+     height: 98vh;
+     width: 98vw;
+ }
+ .road{
+     position: absolute;
+     width: 200%;
+     height:150px;
+     top: 500px;
+     animation: road 5s cubic-bezier(0.7,0.7,0.7,0.7)infinite;
+     animation-direction: normal;
+     animation-fill-mode: backwards;
+ }
+ @keyframes road{
+     100%{
+         transform: translateX(-1320px);
+     }
+ }
+ .city{
+     position: absolute;
+     width: 2500px;
+     height: 360px;
+     top: 120px;
+     animation:city 10s cubic-bezier(0.7,0.7,0.7,0.7)infinite normal backwards;
+ }
+ @keyframes city{
+     100%{
+         transform: translateX(-1000px);
+     }
+ }
+ .sun{
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     top:60px;
+     right: 20px;
+     animation: sun 20s linear infinite normal backwards;
+ }
+ @keyframes sun{
+     100%{
+         transform: translateX(-1200px);
+     }
+ }
+ .car{
+     position:absolute;
+     height: 150px;
+     width: 300px;
+     top: 400px;
+     left: 500px;
+ }
+ .wheel1{
+    position:absolute;
+    height: 55px;
+    width: 55px;
+    top: 480px;
+    left: 526px;
+    animation: rotating 2s linear infinite normal backwards;
+ }
+ .wheel2{
+    position:absolute;
+    height: 55px;
+    width: 55px;
+    top: 480px;
+    left:710px;
+    animation: rotating 2s linear infinite normal backwards;
+ }
+ @keyframes rotating{
+     100%{
+         transform: rotate(1turn);
+     }
+ }
